@@ -1,0 +1,23 @@
+[
+    {
+        "key": "[Backslash] [Backslash]",
+        "command": "notebook.cell.quitEdit",
+        "when": "inputFocus && notebookEditorFocused && vim.active && !editorHasSelection && !editorHoverVisible && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "workbench.action.toggleLockedScrolling"
+    },
+    {
+        "command": "vscode-neovim.compositeEscape1",
+        "key": "ç",
+        "when": "neovim.mode == insert && editorTextFocus",
+        "args": "ç"
+    },
+    {
+        "command": "vscode-neovim.compositeEscape2",
+        "key": "ç",
+        "when": "neovim.mode == insert && editorTextFocus && neovim.recording",
+        "args": "ç"
+    }
+]
